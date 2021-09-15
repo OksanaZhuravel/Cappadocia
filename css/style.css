@@ -5,7 +5,6 @@
   display: grid;
   margin: 0 auto;
   box-sizing: border-box;
-  // font-family: 'roboto', 'Arial', sans-serif;
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -14,17 +13,14 @@
   color: #000000;
   background-color: #ffffff;
 }
-
 .title {
   font-family: 'Lovers Quarrel', cursive;
-  // font-family: 'lovers', 'Arial', sans-serif;
   font-size: 96px;
   font-style: normal;
   font-weight: 400;
   line-height: 128px;
   color: #E2AB3F;
 }
-
 .subtitle {
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
   font-size: 24px;
@@ -32,7 +28,6 @@
   font-weight: 300;
   line-height: 28px;
 }
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
