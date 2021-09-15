@@ -37,6 +37,10 @@ input[type="radio"].visually-hidden {
   height: 1px;
   margin: -1px;
 }
+.social {
+  display: flex;
+  flex-flow: row wrap;
+}
 .social__item {
   list-style: none;
   margin: 0 10px;
@@ -50,6 +54,12 @@ input[type="radio"].visually-hidden {
   background-size: 100%;
   text-decoration: none;
 }
+.social__link:hover {
+  transform: scale(1.2);
+}
+.social__link:active {
+  transform: scale(0.8);
+}
 .social__link--facebook {
   background-image: url(../img/facebook.svg);
 }
@@ -58,8 +68,4 @@ input[type="radio"].visually-hidden {
 }
 .social__link--youtube {
   background-image: url(../img/youtube.svg);
-}
-.social__list {
-  display: flex;
-  flex-flow: row wrap;
 }
