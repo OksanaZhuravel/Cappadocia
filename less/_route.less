@@ -1,15 +1,48 @@
 .route {
-  &__gallery {}
+  width: 100%;
+  grid-template-rows: 100px 25px 1fr;
 
-  &__info {}
-
-  &__item {
-    &--bold {}
+  &__title {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    align-self: flex-end;
+    margin: 0;
+    text-align: center;
   }
 
-  &__list {}
+  &__subtitle {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    justify-self: end;
+    margin: 0 315px 0 0;
+  }
 
-  &__subtitle {}
+  &__gallery {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+  }
 
-  &__title {}
+  &__info {
+    grid-column-start: 1;
+    justify-self: center;
+    text-align: left;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 100px 0 50px 0;
+    list-style: none;
+    font-weight: 300;
+
+    &--inside {
+      margin: 20px 0 50px 0;
+    }
+  }
+
+  &__item {
+    &--bold {
+      font-weight: 400;
+    }
+  }
 }

@@ -25,28 +25,20 @@
       <h1 class="header__title title">Cappadocia</h1>
       <span class="header__subtitle subtitle">Эксклюзивный тур</span>
     </header>
-    <main>
-      <section class="promo">
+    <main class="main">
+      <section class="promo grid">
         <h2 class="promo__title title">Fairy tail</h2>
         <span class="promo__subtitle subtitle">Сказочная страна чудес</span>
-        <article class="promo__gallery gallery gallery--promo">
+        <article class="promo__gallery gallery">
           <h3 class="visually-hidden">Галерея фотографий</h3>
           <div class="gallery__photos">
             <img class="gallery__img" src="img/promo.jpg" alt="Воздушные шары" width="960" height="700">
             <img class="gallery__img" src="img/promo2.png" alt="Сырные домики" width="960" height="700">
-            <img class="gallery__img" src="img/promo3.png" alt="Разноцветная долина" width="960" height="700"></div>
-          <div class="button">
-            <button class="button__prev">
-              <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M21.2992 34.9982L52.9123 3.38503C53.6898 2.60753 53.6898 1.36061 52.9123 0.583119C52.1348 -0.194373 50.8879 -0.194373 50.1104 0.583119L17.089 33.6045C16.3115 34.382 16.3115 35.629 17.089 36.4065L50.1104 69.4132C50.4918 69.7946 51.0053 70 51.504 70C52.0028 70 52.5162 69.8093 52.8976 69.4132C53.6751 68.6357 53.6751 67.3888 52.8976 66.6113L21.2992 34.9982Z"
-                  fill="white" /></svg>
-            </button>
-            <button class="button__next">
-              <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M52.9182 33.6045L19.8967 0.583119C19.1193 -0.194373 17.8723 -0.194373 17.0948 0.583119C16.3173 1.36061 16.3173 2.60753 17.0948 3.38503L48.708 34.9982L17.0948 66.6113C16.3173 67.3888 16.3173 68.6357 17.0948 69.4132C17.4762 69.7946 17.9897 70 18.4885 70C18.9872 70 19.5007 69.8093 19.8821 69.4132L52.9035 36.3918C53.681 35.629 53.681 34.3674 52.9182 33.6045Z"
-                  fill="white" /></svg></button>
+            <img class="gallery__img" src="img/promo3.png" alt="Разноцветная долина" width="960" height="700">
+          </div>
+          <div class="button gallery__button">
+            <button class="button button__prev"><span class="visually-hidden">Назад</span></button>
+            <button class="button button__next"><span class="visually-hidden">Вперед</span></button>
           </div>
         </article>
         <div class="promo__info">
@@ -69,34 +61,13 @@
             бюджет.</p>
         </div>
       </section>
-      <section class="route">
+      <section class="route grid">
         <h2 class="route__title title">Our trip</h2>
         <span class="route__subtitle subtitle">Маршрут</span>
-        <article class="route__gallery gallery gallery--route">
-          <h3 class="visually-hidden">Галерея фотографий</h3>
-          <div class="gallery__photos">
-            <img class="gallery__img" src="img/route.png" alt="Город с верблюдом" width="960" height="1095">
-            <img class="gallery__img" src="img/route2.png" alt="Воздушные шары" width="960" height="1095">
-            <img class="gallery__img" src="img/route3.png" alt="Долина с шарами" width="960" height="1095">
-          </div>
-          <div class="button button--wrap">
-            <button class="button__prev">
-              <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M21.2992 34.9982L52.9123 3.38503C53.6898 2.60753 53.6898 1.36061 52.9123 0.583119C52.1348 -0.194373 50.8879 -0.194373 50.1104 0.583119L17.089 33.6045C16.3115 34.382 16.3115 35.629 17.089 36.4065L50.1104 69.4132C50.4918 69.7946 51.0053 70 51.504 70C52.0028 70 52.5162 69.8093 52.8976 69.4132C53.6751 68.6357 53.6751 67.3888 52.8976 66.6113L21.2992 34.9982Z"
-                  fill="white" /></svg>
-            </button>
-            <button class="button__next">
-              <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M52.9182 33.6045L19.8967 0.583119C19.1193 -0.194373 17.8723 -0.194373 17.0948 0.583119C16.3173 1.36061 16.3173 2.60753 17.0948 3.38503L48.708 34.9982L17.0948 66.6113C16.3173 67.3888 16.3173 68.6357 17.0948 69.4132C17.4762 69.7946 17.9897 70 18.4885 70C18.9872 70 19.5007 69.8093 19.8821 69.4132L52.9035 36.3918C53.681 35.629 53.681 34.3674 52.9182 33.6045Z"
-                  fill="white" /></svg></button>
-          </div>
-        </article>
         <div class="route__info">
           <ol class="route__list">
             <li class="route__item route__item--bold">День 1
-              <ul class="route__list">
+              <ul class="route__list route__list--inside">
                 <li class="route__item">Прилёт в Анкару</li>
                 <li class="route__item"> Трансфер в Каппадокию</li>
                 <li class="route__item">Солёное озеро</li>
@@ -105,7 +76,7 @@
               </ul>
             </li>
             <li class="route__item route__item--bold">День 2
-              <ul class="route__list">
+              <ul class="route__list route__list--inside">
                 <li class="route__item">фотосессия</li>
                 <li class="route__item"> Завтрак в отеле </li>
                 <li class="route__item">Дневной тур по Каппадокии</li>
@@ -113,14 +84,14 @@
               </ul>
             </li>
             <li class="route__item route__item--bold">День 3
-              <ul class="route__list">
+              <ul class="route__list route__list--inside">
                 <li class="route__item">Полёт на воздушном шаре</li>
                 <li class="route__item">Завтрак в отеле</li>
                 <li class="route__item">Экскурсии на выбор </li>
               </ul>
             </li>
             <li class="route__item route__item--bold">День 4
-              <ul class="route__list">
+              <ul class="route__list route__list--inside">
                 <li class="route__item">Свободное время, шоппинг</li>
                 <li class="route__item">Трансфер в Анкару</li>
                 <li class="route__item">Вылет в Киев</li>
@@ -129,8 +100,20 @@
           </ol>
           <button class="button button--route" type="submit" value="Забронировать">забронировать</button>
         </div>
+        <article class="route__gallery gallery gallery--route">
+          <h3 class="visually-hidden">Галерея фотографий</h3>
+          <div class="gallery__photos">
+            <img class="gallery__img" src="img/route.png" alt="Город с верблюдом" width="960" height="1095">
+            <img class="gallery__img" src="img/route2.png" alt="Воздушные шары" width="960" height="1095">
+            <img class="gallery__img" src="img/route3.png" alt="Долина с шарами" width="960" height="1095">
+          </div>
+          <div class="button gallery__button">
+            <button class="button button__prev"><span class="visually-hidden">Назад</span></button>
+            <button class="button button__next"><span class="visually-hidden">Вперед</span></button>
+          </div>
+        </article>
       </section>
-      <section class="hotel">
+      <section class="hotel grid">
         <h2 class="hotel__title title">Hotel</h2>
         <span class="hotel__subtitle subtitle">Sultan Cave Suites</span>
         <img src="img/hotel_img.png" alt="Отель" class="hotel__img" width="500" height="700">
@@ -144,20 +127,20 @@
           <p class="hotel__content">Отель Cave Suites Sultan располагает изысканным рестораном, где подают фирменные
             блюда региона Каппадокии. После ужина, пройдя на террасу, вы сможете заказать напиток и полюбоваться
             закатом солнца над деревней.</p>
-        </div>
-        <div class="hotel__foto">
-          <img src="img/hotel_room.png" alt="Ванная" class="hotel__foto" width="280" height="150">
-          <img src="img/hotel_bathroom2.png" alt="Ванная" class="hotel__foto" width="280" height="150">
-          <img src="img/hotel_bathroom.png" alt="Комната" class="hotel__foto" width="280" height="150">
-          <img src="img/hotel_room2.png" alt="Комната" class="hotel__foto" width="280" height="150">
+          <div class="hotel__wrap">
+            <img src="img/hotel_room.png" alt="Ванная" class="hotel__foto" width="280" height="150">
+            <img src="img/hotel_bathroom2.png" alt="Ванная" class="hotel__foto" width="280" height="150">
+            <img src="img/hotel_bathroom.png" alt="Комната" class="hotel__foto" width="280" height="150">
+            <img src="img/hotel_room2.png" alt="Комната" class="hotel__foto" width="280" height="150">
+          </div>
         </div>
       </section>
-      <section class="price">
+      <section class="price grid">
         <h2 class="price__title title">Price</h2>
         <span class="price__subtitle subtitle">Стоимость услуг</span>
         <ul class="price__list">
           <li class="price__item">Включено
-            <ul class="price__list">
+            <ul class="price__content">
               <li class="price__text">Проживание в двухместном номере в отеле с завтраками</li>
               <li class="price__text">Индивидуальный трансфер для нашей группы из Анкары и обратно</li>
               <li class="price__text">Экскурсия на Солёное озеро</li>
@@ -168,7 +151,7 @@
             </ul>
           </li>
           <li class="price__item">Не включено
-            <ul class="price__list">
+            <ul class="price__content">
               <li class="price__text">Авиа Киев-Анкара-Киев (140-170$)</li>
               <li class="price__text">Обеды и ужины (150$ на поездку)</li>
               <li class="price__text">Воздушный шар 200$</li>
@@ -216,6 +199,7 @@
     <footer class="footer">
       <h2 class="footer__title title">Dreams come true</h2>
     </footer>
+    <script src="js/gallery.js"></script>
   </body>
 
 </html>
