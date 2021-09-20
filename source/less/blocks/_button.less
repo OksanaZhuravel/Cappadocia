@@ -1,0 +1,55 @@
+.button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &:hover .button__next,
+  &:hover .button__prev {
+    background-color: #b1acac;
+    opacity: 0.7;
+  }
+
+
+  &__next {
+    width: 70px;
+    height: 70px;
+    background-image: url('../img/button_next.svg');
+
+    &:active {
+      background-color: #E5E5E5;
+    }
+  }
+
+  &__prev {
+    width: 70px;
+    height: 70px;
+    background-image: url('../img/button_prev.svg');
+
+    &:active {
+      background-color: #E5E5E5;
+    }
+  }
+
+  &--submit {
+    width: 280px;
+    height: 50px;
+    background-color: #FFFFFF;
+    border: 1px solid #E2AB3F;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #E2AB3F;
+    }
+  }
+
+  // &--wrap {}
+}

@@ -1,0 +1,40 @@
+.social {
+  display: flex;
+  flex-flow: row wrap;
+
+  &__item {
+    list-style: none;
+    margin: 0 10px;
+  }
+
+  &__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    text-decoration: none;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: scale(0.8);
+    }
+
+
+    &--facebook {
+      background-image: url(../img/facebook.svg);
+    }
+
+    &--instagram {
+      background-image: url(../img/instagram.svg);
+    }
+
+    &--youtube {
+      background-image: url(../img/youtube.svg);
+    }
+  }
+}
