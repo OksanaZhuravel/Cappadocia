@@ -1,0 +1,48 @@
+.hotel {
+  width: 100%;
+  max-width: 1202px;
+  column-gap: 100px;
+
+  &__title {
+    justify-self: start;
+    margin: 0;
+  }
+
+  &__subtitle {
+    grid-column-start: 1;
+    justify-self: start;
+    margin: 0 0 100px 122px;
+  }
+
+  &__img {
+    grid-column-start: 1;
+    justify-self: end;
+    display: block;
+    width: 500px;
+    height: 700px;
+  }
+
+  &__info {
+    justify-self: start;
+  }
+
+  &__content {
+    max-width: 600px;
+    margin: 0 0 20px 0;
+  }
+
+  &__wrap {
+    margin: 80px 0 0 0;
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 39px;
+    row-gap: 50px;
+  }
+
+  &__foto {
+    display: block;
+    width: 280px;
+    height: 150px;
+  }
+}

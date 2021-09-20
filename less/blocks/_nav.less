@@ -1,0 +1,75 @@
+.nav {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 72px 0 152px 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+
+  &__item {
+    margin: 0 52px 0 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #000000;
+    border-bottom: 2px solid transparent;
+
+    &--activ {
+      border-bottom: 2px solid #000000;
+    }
+
+    &:active {
+      border-bottom: 2px solid #000000;
+    }
+
+    &:hover {
+      border-bottom: 2px solid #E2AB3F;
+      color: #E2AB3F;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid #775106;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__tel {
+    position: relative;
+    padding: 0 0 0 60px;
+
+    &:hover {
+      border-bottom: 2px solid transparent;
+
+      &::before {
+        background-image: url(../../img/phone.svg);
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: transparent;
+      background-image: url(../../img/phone_black.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
