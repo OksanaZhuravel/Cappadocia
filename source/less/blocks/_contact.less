@@ -1,9 +1,69 @@
 .contact {
-  &__item {}
+  position: absolute;
+  top: 96px;
+  left: 476px;
+  width: 356px;
+  min-height: 530px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url(../../img/balloon_fon.svg);
+  background-position: center;
+  background-size: 100%;
 
-  &__link {}
+  &__item {
+    margin: 0 0 20px 0;
+    padding: 0 0 0 40px;
+    box-sizing: border-box;
+    position: relative;
+  }
 
-  &__list {}
+  &__link {
+    text-decoration: none;
+    color: #000000;
 
-  &__title {}
+    &:hover {
+      color: #E2AB3F;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    &--tel {
+      &::before {
+        background-image: url(../../img/phone.svg);
+      }
+    }
+
+    &--mail {
+      &::before {
+        left: 0;
+        background-image: url(../../img/mail.svg);
+      }
+    }
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__title {
+    margin: 115px 0 51px 0;
+    font-size: 86px;
+  }
 }

@@ -7,6 +7,10 @@
   background-position: center;
   background-repeat: no-repeat;
 
+  &:focus {
+    outline-color: #775106;
+  }
+
   &:hover .button__next,
   &:hover .button__prev {
     background-color: #b1acac;
@@ -17,7 +21,7 @@
   &__next {
     width: 70px;
     height: 70px;
-    background-image: url('../img/button_next.svg');
+    background-image: url('../../img/button_next.svg');
 
     &:active {
       background-color: #E5E5E5;
@@ -27,7 +31,7 @@
   &__prev {
     width: 70px;
     height: 70px;
-    background-image: url('../img/button_prev.svg');
+    background-image: url('../../img/button_prev.svg');
 
     &:active {
       background-color: #E5E5E5;
@@ -48,6 +52,11 @@
 
     &:hover {
       color: #E2AB3F;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: #775106;
     }
   }
 
