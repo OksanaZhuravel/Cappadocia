@@ -45,8 +45,7 @@ input[type="radio"].visually-hidden {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 55px;
-       column-gap: 55px;
+  column-gap: 55px;
   justify-items: center;
 }
 .header {
@@ -257,7 +256,7 @@ input[type="radio"].visually-hidden {
 }
 .button:hover .button__next,
 .button:hover .button__prev {
-  background-color: #b1acac;
+  background-color: #E2AB3F;
   opacity: 0.7;
 }
 .button__next {
@@ -298,8 +297,7 @@ input[type="radio"].visually-hidden {
 .hotel {
   width: 100%;
   max-width: 1202px;
-  -moz-column-gap: 100px;
-       column-gap: 100px;
+  column-gap: 100px;
 }
 .hotel__title {
   justify-self: start;
@@ -329,8 +327,7 @@ input[type="radio"].visually-hidden {
   grid-column-start: 2;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 39px;
-       column-gap: 39px;
+  column-gap: 39px;
   row-gap: 50px;
 }
 .hotel__foto {
@@ -341,8 +338,7 @@ input[type="radio"].visually-hidden {
 .price {
   width: 100%;
   max-width: 1305px;
-  -moz-column-gap: 113px;
-       column-gap: 113px;
+  column-gap: 113px;
   background-color: transparent;
   background-repeat: no-repeat;
   background-image: url(../../img/balloon.svg), url(../../img/balloon.svg), url(../../img/balloon.svg);
@@ -391,8 +387,7 @@ input[type="radio"].visually-hidden {
 .application {
   grid-column-start: 1;
   grid-column-end: 3;
-  -moz-column-gap: 113px;
-       column-gap: 113px;
+  column-gap: 113px;
   width: 100%;
   grid-template-rows: 100px 25px 100px 25px 1fr;
 }
@@ -444,14 +439,6 @@ input[type="radio"].visually-hidden {
   color: #000000;
   text-transform: capitalize;
 }
-.form__style::-moz-placeholder {
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 21px;
-  color: #000000;
-}
 .form__style::placeholder {
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
   font-size: 18px;
@@ -477,29 +464,8 @@ input[type="radio"].visually-hidden {
   line-height: 28px;
 }
 .form--show {
-  -webkit-animation-name: show;
-          animation-name: show;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-}
-@-webkit-keyframes show {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-15px);
-  }
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(15px);
-  }
+  animation-name: show;
+  animation-duration: 0.6s;
 }
 @keyframes show {
   0%,
@@ -630,5 +596,3 @@ input[type="radio"].visually-hidden {
   font-size: 118px;
   margin: 311px 0 0 0;
 }
-
-/*# sourceMappingURL=style.css.map */
