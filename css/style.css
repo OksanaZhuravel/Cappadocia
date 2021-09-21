@@ -58,7 +58,7 @@ input[type="radio"].visually-hidden {
   padding: 0 160px;
   box-sizing: border-box;
   background-color: transparent;
-  background-image: url(../img/header_fon.jpg);
+  background-image: url('../img/header_fon.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -137,7 +137,7 @@ input[type="radio"].visually-hidden {
   border-bottom: 2px solid transparent;
 }
 .nav__tel:hover::before {
-  background-image: url(../../img/phone.svg);
+  background-image: url('../img/phone.svg');
 }
 .nav__tel::before {
   content: "";
@@ -148,7 +148,7 @@ input[type="radio"].visually-hidden {
   width: 30px;
   height: 30px;
   background-color: transparent;
-  background-image: url(../../img/phone_black.svg);
+  background-image: url('../img/phone_black.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -262,7 +262,7 @@ input[type="radio"].visually-hidden {
 .button__next {
   width: 70px;
   height: 70px;
-  background-image: url('../../img/button_next.svg');
+  background-image: url('../img/button_next.svg');
 }
 .button__next:active {
   background-color: #E5E5E5;
@@ -270,7 +270,7 @@ input[type="radio"].visually-hidden {
 .button__prev {
   width: 70px;
   height: 70px;
-  background-image: url('../../img/button_prev.svg');
+  background-image: url('../img/button_prev.svg');
 }
 .button__prev:active {
   background-color: #E5E5E5;
@@ -341,7 +341,7 @@ input[type="radio"].visually-hidden {
   column-gap: 113px;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-image: url(../../img/balloon.svg), url(../../img/balloon.svg), url(../../img/balloon.svg);
+  background-image: url('../img/balloon.svg'), url('../img/balloon.svg'), url('../img/balloon.svg');
   background-position: 1099px 118px, 984px 285px, 1057px 452px;
   background-size: 206px 305px, 73px 108px, 73px 108px;
 }
@@ -498,7 +498,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-image: url(../../img/balloon_fon.svg);
+  background-image: url('../img/balloon_fon.svg');
   background-position: center;
   background-size: 100%;
 }
@@ -528,11 +528,11 @@ input[type="radio"].visually-hidden {
   background-size: cover;
 }
 .contact__link--tel::before {
-  background-image: url(../../img/phone.svg);
+  background-image: url('../img/phone.svg');
 }
 .contact__link--mail::before {
   left: 0;
-  background-image: url(../../img/mail.svg);
+  background-image: url('../img/mail.svg');
 }
 .contact__list {
   padding: 0;
@@ -569,23 +569,23 @@ input[type="radio"].visually-hidden {
   transform: scale(0.8);
 }
 .social__link--facebook {
-  background-image: url(../../img/facebook.svg);
+  background-image: url('../img/facebook.svg');
 }
 .social__link--instagram {
-  background-image: url(../../img/instagram.svg);
+  background-image: url('../img/instagram.svg');
 }
 .social__link--youtube {
-  background-image: url(../../img/youtube.svg);
+  background-image: url('../img/youtube.svg');
 }
 .footer {
   position: relative;
   width: 100%;
   min-height: 1180px;
-  background-color: #E2AB3F;
+  background-color: #e7e1d6;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  background-image: url(../../img/footer_fon.png);
+  background-image: url('../img/footer_fon.png');
 }
 .footer__title {
   grid-column-start: 2;
